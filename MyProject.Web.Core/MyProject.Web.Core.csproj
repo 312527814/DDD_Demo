@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspectCore.Core" Version="1.2.0" />
+    <PackageReference Include="AspectCore.Extensions.Autofac" Version="1.2.0" />
+    <PackageReference Include="AspectCore.Extensions.DependencyInjection" Version="1.2.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.3.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyProject.Application\MyProject.Application.csproj" />
+    <ProjectReference Include="..\MyProject.Core\MyProject.Core.csproj" />
+    <ProjectReference Include="..\MyProject.Infrastructure.SqlServer\MyProject.Infrastructure.SqlServer.csproj" />
+    <ProjectReference Include="..\MyProject.SqlHelper.Dapper\MyProject.SqlHelper.Dapper.csproj" />
+  </ItemGroup>
+
+</Project>
